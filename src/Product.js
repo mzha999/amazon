@@ -2,7 +2,7 @@ import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateContext";
 const Product = ({ id, title, image, price, rating }) => {
-    const[state, dispatch] = useStateValue()
+    const[, dispatch] = useStateValue()
 
     const AddToBasket = () => {
         dispatch({
@@ -28,7 +28,7 @@ const Product = ({ id, title, image, price, rating }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <p key={i}>🌟</p>
             ))}
         </div>
       </div>
