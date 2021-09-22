@@ -21,7 +21,7 @@ const Checkout = () => {
           </div>
         </div>
         <div className="checkout_right">
-          <Subtotal basket={basket} />
+          <Subtotal />
         </div>
       </div>
       
